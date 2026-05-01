@@ -1,0 +1,45 @@
+:root {
+  --bg: #080b14;
+  --card: #11182a;
+  --text: #f3f6ff;
+  --muted: #a3b0cf;
+  --brand: #4f8cff;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: radial-gradient(80% 60% at 50% 0%, #101a33 0%, var(--bg) 100%);
+  color: var(--text);
+}
+.page { max-width: 1040px; margin: 0 auto; padding: 72px 20px 96px; }
+.hero h1 { font-size: clamp(2rem, 5vw, 4rem); margin: 14px 0 20px; line-height: 1.1; }
+.badge {
+  display: inline-block;
+  border: 1px solid #324b83;
+  color: #a7c1ff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+.subtitle { color: var(--muted); max-width: 680px; font-size: 1.1rem; line-height: 1.6; }
+.ctaGroup { display: flex; gap: 12px; margin-top: 28px; }
+.btn {
+  padding: 10px 16px;
+  border: 1px solid #3a4f80;
+  border-radius: 10px;
+  color: var(--text);
+  text-decoration: none;
+}
+.btn.primary { background: var(--brand); border-color: var(--brand); color: #fff; }
+.section { margin-top: 72px; }
+.section h2 { margin-bottom: 18px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.card {
+  background: linear-gradient(180deg, #131d33 0%, var(--card) 100%);
+  border: 1px solid #1f2c4a;
+  padding: 20px;
+  border-radius: 14px;
+}
+.card p, .contact p { color: var(--muted); line-height: 1.7; }
